@@ -34,15 +34,15 @@ foo(function(value){
 //.then 
 // what is jason takes thing form string and make tem an object
 // geting data form backend new way
-function fetchData(url){
-return new Promise((resolve,reject)=>{
-    fetch(url)
-    .then((Response)=> Response.json())
-    .then((data)=> resolve(data))
-    .catch((error)=> resolve(error))
-})}
-fetchData("https://63d14a1e3f08e4a8ff94b1a5.mockapi.io/department")
-.then((data)=>console.log(data))
+// function fetchData(url){
+// return new Promise((resolve,reject)=>{
+//     fetch(url)
+//     .then((Response)=> Response.json())
+//     .then((data)=> resolve(data))
+//     .catch((error)=> resolve(error))
+// })}
+// fetchData("https://63d14a1e3f08e4a8ff94b1a5.mockapi.io/department")
+// .then((data)=>console.log(data))
 // .catch((error)=>console.log(error))// give error not found
 
 // new easy way async makes a funtion aysinchorni
@@ -75,6 +75,12 @@ data.forEach((elem)=>{
 })
 }
 get();
+
+
+// 
+async function getData(){
+
+}
 
 
 
